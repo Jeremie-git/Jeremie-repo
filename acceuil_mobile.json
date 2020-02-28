@@ -1,0 +1,201 @@
+{
+    "mockup": {
+        "controls": {
+            "control": [
+                {
+                    "ID": "1",
+                    "typeID": "AndroidPhone",
+                    "zOrder": "1",
+                    "measuredW": "356",
+                    "measuredH": "725",
+                    "x": "456",
+                    "y": "10",
+                    "properties": {
+                        "bgTransparent": "true",
+                        "resizing": "stretch"
+                    }
+                },
+                {
+                    "ID": "2",
+                    "typeID": "Image",
+                    "zOrder": "2",
+                    "w": "320",
+                    "h": "118",
+                    "measuredW": "360",
+                    "measuredH": "140",
+                    "x": "474",
+                    "y": "107",
+                    "properties": {
+                        "borderStyle": "square",
+                        "src": {
+                            "ID": "F2716FA0-1875-412B-A248-85F779AFA0DA"
+                        }
+                    }
+                },
+                {
+                    "ID": "3",
+                    "typeID": "Image",
+                    "zOrder": "3",
+                    "w": "111",
+                    "h": "97",
+                    "measuredW": "225",
+                    "measuredH": "225",
+                    "x": "508",
+                    "y": "290",
+                    "properties": {
+                        "src": {
+                            "ID": "544148AB-2244-4341-81C1-B5855CA7531A"
+                        }
+                    }
+                },
+                {
+                    "ID": "9",
+                    "typeID": "Image",
+                    "zOrder": "4",
+                    "w": "111",
+                    "h": "97",
+                    "measuredW": "700",
+                    "measuredH": "700",
+                    "x": "655",
+                    "y": "290",
+                    "properties": {
+                        "src": {
+                            "ID": "053A777A-A813-466F-9613-CEF771BED5C2"
+                        }
+                    }
+                },
+                {
+                    "ID": "10",
+                    "typeID": "Image",
+                    "zOrder": "5",
+                    "w": "111",
+                    "h": "97",
+                    "measuredW": "225",
+                    "measuredH": "225",
+                    "x": "655",
+                    "y": "416",
+                    "properties": {
+                        "src": {
+                            "ID": "22E70DF2-8A62-46D3-8CB6-8EB296FD0CC0"
+                        }
+                    }
+                },
+                {
+                    "ID": "11",
+                    "typeID": "Image",
+                    "zOrder": "6",
+                    "w": "111",
+                    "h": "97",
+                    "measuredW": "225",
+                    "measuredH": "225",
+                    "x": "655",
+                    "y": "540",
+                    "properties": {
+                        "src": {
+                            "ID": "5C03FF40-CA38-44E4-88DA-A29B777BB046"
+                        }
+                    }
+                },
+                {
+                    "ID": "12",
+                    "typeID": "Image",
+                    "zOrder": "7",
+                    "w": "111",
+                    "h": "97",
+                    "measuredW": "225",
+                    "measuredH": "225",
+                    "x": "508",
+                    "y": "416",
+                    "properties": {
+                        "src": {
+                            "ID": "D819273B-D645-49A1-A2CD-EEF2AAC22771"
+                        }
+                    }
+                },
+                {
+                    "ID": "13",
+                    "typeID": "Image",
+                    "zOrder": "8",
+                    "w": "111",
+                    "h": "97",
+                    "measuredW": "245",
+                    "measuredH": "206",
+                    "x": "508",
+                    "y": "540",
+                    "properties": {
+                        "src": {
+                            "ID": "AA88022D-B3CD-41CC-A0F6-1AB10CB1804F"
+                        }
+                    }
+                },
+                {
+                    "ID": "14",
+                    "typeID": "Icon",
+                    "zOrder": "9",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "492",
+                    "y": "118",
+                    "properties": {
+                        "icon": {
+                            "ID": "search",
+                            "size": "medium"
+                        }
+                    }
+                },
+                {
+                    "ID": "15",
+                    "typeID": "Icon",
+                    "zOrder": "10",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "688",
+                    "y": "121",
+                    "properties": {
+                        "icon": {
+                            "ID": "user-plus",
+                            "size": "medium"
+                        }
+                    }
+                },
+                {
+                    "ID": "16",
+                    "typeID": "Icon",
+                    "zOrder": "11",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "750",
+                    "y": "118",
+                    "properties": {
+                        "icon": {
+                            "ID": "sign-in",
+                            "size": "medium"
+                        }
+                    }
+                },
+                {
+                    "ID": "18",
+                    "typeID": "AppBar",
+                    "zOrder": "0",
+                    "w": "320",
+                    "h": "38",
+                    "measuredW": "320",
+                    "measuredH": "44",
+                    "x": "474",
+                    "y": "225"
+                }
+            ]
+        },
+        "attributes": {
+            "name": "Acceuil_mobile",
+            "order": 938428.5264654435,
+            "parentID": null
+        },
+        "resourceID": "2278E287-509B-183B-1098-2EC38DDDB7D8",
+        "mockupH": "725",
+        "mockupW": "356",
+        "measuredW": "812",
+        "measuredH": "735",
+        "version": "1.0"
+    }
+}

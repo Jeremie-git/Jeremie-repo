@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Temp Bienvenue sur Pêche 2.0 (titre provisoire)</title>
+    <link rel="stylesheet" href="Style_acceuil_commerce.css">
+    <link rel="stylesheet" href="Temp_styleAssoPeche.css">
+  </head>
+
+  <body onload="cacher()">
+
+    <div class="header">
+      <img src="banniere.jpg" alt="banniere" width="100%">
+      <div class="inscri_connec">
+        <img src="register.svg" alt="">
+        <a href="#" id="inscrire">S'inscrire</a>
+        <img src="login.svg" alt="">
+        <a href="#"id="connection">Se connecter</a>
+      </div>
+      <input type="search" name="chercher" id="recherche" placeholder="Rechercher sur Pêche 2.0">
+      <!-- barre de switch -->
+      <label class="switch">
+      <input type="checkbox" id="switch" onclick="changer()" placeholder="Commerce">
+      <span class="slider"></span>
+      </label>
+      <!--  -->
+    </div>
+
+    <div class="corps" id="corps">
+      <div class="icone" id="icone_canne_peche">
+        <a href="#"><img src="canne_peche.png" alt="canne_peche"></a>
+        <p>Cannes à pêche</p>
+      </div>
+      <div class="icone" id="icone_hamecon">
+        <a href="#"><img src="Hameçon.jpg" alt="hameçon"></a>
+        <p>Hameçons</p>
+      </div>
+      <div class="icone" id="icone_moulinet">
+        <a href="#"><img src="Moulinet.jpg" alt="moulinet"></a>
+        <p>Moulinets</p>
+      </div>
+      <div class="icone" id="icone_leure">
+        <a href="#"><img src="leure.jpg" alt="leure"></a>
+          <p>Leures</p>
+      </div>
+      <div class="icone" id="icone_equipement">
+        <a href="#"><img src="bottes.jpg" alt="equipement"></a>
+          <p>Equipement</p>
+      </div>
+      <div class="icone" id="icone_detachee">
+        <a href="#"><img src="piece_detachee.jpg" alt="piece_detachee"></a>
+          <p>Pièces Détachées</p>
+      </div>
+    </div>
+
+    <div id="evenements">
+      <div class="flex-item">
+        <div class="img_flex_item">
+            <img src= "debutant.jpg" id="image1" title="debutant" width=259px height=194px>
+        </div>
+          <div class="p1">Débutant</div>
+          <h2>Journées découvertes, organisées le second W.E. de chaque mois, sur notre base de loisir</h2>
+      </div>
+
+      <div class="flex-item">
+        <div class="img_flex_item">
+          <img src= "intermediaire.jpg" id="image2" title="intermediaire" width=259px height=194px>
+        </div>
+          <div class="p1">Intermédiaire</div>
+          <h2>Journées partages de conseils, tous les trois mois, dans les locaux de l'association</h2>
+      </div>
+
+      <div class="flex-item">
+        <div class="img_flex_item">
+          <img src= "expert.jpg" id="image3" title="expert">
+        </div>
+          <div class="p1">Expert</div>
+          <h2>Séjours à l'étranger, pension complète, durée et destination selon projet</h2>
+      </div>
+    </div>
+
+
+
+    <div class="footer">
+      <a href="#">Contacts</a>
+      <a href="#">Conditions générales de vente</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">CopyRights</a>
+    </div>
+
+  </body>
+  <script type="text/javascript" src="index.js">
+
+  </script>
+</html>

@@ -1,0 +1,39 @@
+#evenements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.flex-item{
+    justify-content: center;
+    display: flex;
+    position:relative;
+    width:55%;
+    padding:15px;
+}
+
+
+.img_flex_item{
+  width : 26%;
+}
+
+.p1 {
+    background-color: #B2924D;
+    color:white;
+    width:26%;
+    height: 7%;
+    position:absolute;
+    left:-10px;
+    top:0px;
+    text-align: justify;
+    padding-top: 10px;
+    display: grid;
+}
+
+h2 {
+    align-content: center;
+    color:#9FAF3A;
+    padding-left: 2%;
+    padding-top: 2%;
+}

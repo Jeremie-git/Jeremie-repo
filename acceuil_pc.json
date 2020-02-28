@@ -1,0 +1,258 @@
+{
+    "mockup": {
+        "controls": {
+            "control": [
+                {
+                    "ID": "1",
+                    "typeID": "BrowserWindow",
+                    "zOrder": "0",
+                    "w": "1417",
+                    "h": "1061",
+                    "measuredW": "450",
+                    "measuredH": "400",
+                    "x": "9",
+                    "y": "9"
+                },
+                {
+                    "ID": "5",
+                    "typeID": "Image",
+                    "zOrder": "1",
+                    "w": "1417",
+                    "h": "229",
+                    "measuredW": "360",
+                    "measuredH": "140",
+                    "x": "9",
+                    "y": "80",
+                    "properties": {
+                        "src": {
+                            "ID": "F2716FA0-1875-412B-A248-85F779AFA0DA"
+                        }
+                    }
+                },
+                {
+                    "ID": "17",
+                    "typeID": "Icon",
+                    "zOrder": "2",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "1359",
+                    "y": "102",
+                    "properties": {
+                        "icon": {
+                            "ID": "sign-in",
+                            "size": "medium"
+                        },
+                        "color": "16777215"
+                    }
+                },
+                {
+                    "ID": "18",
+                    "typeID": "Icon",
+                    "zOrder": "3",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "1297",
+                    "y": "105",
+                    "properties": {
+                        "icon": {
+                            "ID": "user-plus",
+                            "size": "medium"
+                        },
+                        "color": "16777215"
+                    }
+                },
+                {
+                    "ID": "32",
+                    "typeID": "ProgressBar",
+                    "zOrder": "4",
+                    "w": "1417",
+                    "h": "26",
+                    "measuredW": "100",
+                    "measuredH": "20",
+                    "x": "9",
+                    "y": "309"
+                },
+                {
+                    "ID": "35",
+                    "typeID": "Image",
+                    "zOrder": "5",
+                    "w": "201",
+                    "h": "135",
+                    "measuredW": "77",
+                    "measuredH": "79",
+                    "x": "932",
+                    "y": "728"
+                },
+                {
+                    "ID": "44",
+                    "typeID": "Image",
+                    "zOrder": "6",
+                    "w": "201",
+                    "h": "135",
+                    "measuredW": "77",
+                    "measuredH": "79",
+                    "x": "306",
+                    "y": "728"
+                },
+                {
+                    "ID": "45",
+                    "typeID": "Image",
+                    "zOrder": "7",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "77",
+                    "measuredH": "79",
+                    "x": "616",
+                    "y": "728"
+                },
+                {
+                    "ID": "46",
+                    "typeID": "Image",
+                    "zOrder": "8",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "225",
+                    "measuredH": "225",
+                    "x": "931",
+                    "y": "548",
+                    "properties": {
+                        "src": {
+                            "ID": "22E70DF2-8A62-46D3-8CB6-8EB296FD0CC0"
+                        }
+                    }
+                },
+                {
+                    "ID": "47",
+                    "typeID": "Image",
+                    "zOrder": "9",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "245",
+                    "measuredH": "206",
+                    "x": "616",
+                    "y": "548",
+                    "properties": {
+                        "src": {
+                            "ID": "AA88022D-B3CD-41CC-A0F6-1AB10CB1804F"
+                        }
+                    }
+                },
+                {
+                    "ID": "48",
+                    "typeID": "Image",
+                    "zOrder": "10",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "225",
+                    "measuredH": "225",
+                    "x": "305",
+                    "y": "558",
+                    "properties": {
+                        "src": {
+                            "ID": "5C03FF40-CA38-44E4-88DA-A29B777BB046"
+                        }
+                    }
+                },
+                {
+                    "ID": "49",
+                    "typeID": "Image",
+                    "zOrder": "11",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "225",
+                    "measuredH": "225",
+                    "x": "305",
+                    "y": "378",
+                    "properties": {
+                        "src": {
+                            "ID": "544148AB-2244-4341-81C1-B5855CA7531A"
+                        }
+                    }
+                },
+                {
+                    "ID": "50",
+                    "typeID": "Image",
+                    "zOrder": "12",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "225",
+                    "measuredH": "225",
+                    "x": "931",
+                    "y": "378",
+                    "properties": {
+                        "src": {
+                            "ID": "D819273B-D645-49A1-A2CD-EEF2AAC22771"
+                        }
+                    }
+                },
+                {
+                    "ID": "51",
+                    "typeID": "Image",
+                    "zOrder": "13",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "700",
+                    "measuredH": "700",
+                    "x": "616",
+                    "y": "378",
+                    "properties": {
+                        "src": {
+                            "ID": "053A777A-A813-466F-9613-CEF771BED5C2"
+                        }
+                    }
+                },
+                {
+                    "ID": "59",
+                    "typeID": "TextArea",
+                    "zOrder": "14",
+                    "w": "1417",
+                    "h": "116",
+                    "measuredW": "200",
+                    "measuredH": "140",
+                    "x": "9",
+                    "y": "927",
+                    "properties": {
+                        "color": "14540253"
+                    }
+                },
+                {
+                    "ID": "60",
+                    "typeID": "BlockOfText",
+                    "zOrder": "15",
+                    "w": "1172",
+                    "measuredW": "275",
+                    "measuredH": "80",
+                    "x": "163",
+                    "y": "945"
+                },
+                {
+                    "ID": "63",
+                    "typeID": "Icon",
+                    "zOrder": "16",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "1228",
+                    "y": "105",
+                    "properties": {
+                        "icon": {
+                            "ID": "search",
+                            "size": "medium"
+                        },
+                        "color": "16777215"
+                    }
+                }
+            ]
+        },
+        "attributes": {
+            "name": "Acceuil_PC_vente",
+            "order": 473266.3934155056,
+            "parentID": null
+        },
+        "resourceID": "2DA68303-1918-469F-AF0A-A4A9A2E64AAB",
+        "mockupH": "1061",
+        "mockupW": "1417",
+        "measuredW": "1426",
+        "measuredH": "1070",
+        "version": "1.0"
+    }
+}

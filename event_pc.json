@@ -1,0 +1,211 @@
+{
+    "mockup": {
+        "controls": {
+            "control": [
+                {
+                    "ID": "0",
+                    "typeID": "BrowserWindow",
+                    "zOrder": "0",
+                    "w": "1417",
+                    "h": "1061",
+                    "measuredW": "450",
+                    "measuredH": "400",
+                    "x": "9",
+                    "y": "9"
+                },
+                {
+                    "ID": "1",
+                    "typeID": "Image",
+                    "zOrder": "1",
+                    "w": "1417",
+                    "h": "229",
+                    "measuredW": "360",
+                    "measuredH": "140",
+                    "x": "9",
+                    "y": "80",
+                    "properties": {
+                        "src": {
+                            "ID": "F2716FA0-1875-412B-A248-85F779AFA0DA"
+                        }
+                    }
+                },
+                {
+                    "ID": "2",
+                    "typeID": "Icon",
+                    "zOrder": "2",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "1359",
+                    "y": "102",
+                    "properties": {
+                        "icon": {
+                            "ID": "sign-in",
+                            "size": "medium"
+                        }
+                    }
+                },
+                {
+                    "ID": "3",
+                    "typeID": "Icon",
+                    "zOrder": "3",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "1297",
+                    "y": "105",
+                    "properties": {
+                        "icon": {
+                            "ID": "user-plus",
+                            "size": "medium"
+                        }
+                    }
+                },
+                {
+                    "ID": "4",
+                    "typeID": "ProgressBar",
+                    "zOrder": "4",
+                    "w": "1417",
+                    "h": "26",
+                    "measuredW": "100",
+                    "measuredH": "20",
+                    "x": "9",
+                    "y": "309",
+                    "properties": {
+                        "scrollBarValue": "51",
+                        "color": "14540253"
+                    }
+                },
+                {
+                    "ID": "6",
+                    "typeID": "Image",
+                    "zOrder": "5",
+                    "w": "201",
+                    "h": "135",
+                    "measuredW": "259",
+                    "measuredH": "194",
+                    "x": "306",
+                    "y": "728",
+                    "properties": {
+                        "src": {
+                            "ID": "FAB3F68D-420B-481C-AEB0-D7005D4BE618"
+                        }
+                    }
+                },
+                {
+                    "ID": "10",
+                    "typeID": "Image",
+                    "zOrder": "6",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "259",
+                    "measuredH": "194",
+                    "x": "305",
+                    "y": "558",
+                    "properties": {
+                        "src": {
+                            "ID": "6E35EC29-2B6B-48F7-93AB-FB734799365A"
+                        }
+                    }
+                },
+                {
+                    "ID": "11",
+                    "typeID": "Image",
+                    "zOrder": "7",
+                    "w": "203",
+                    "h": "135",
+                    "measuredW": "264",
+                    "measuredH": "191",
+                    "x": "305",
+                    "y": "378",
+                    "properties": {
+                        "src": {
+                            "ID": "13728319-E0C9-4817-B35A-4A0C5FCA58D2"
+                        }
+                    }
+                },
+                {
+                    "ID": "14",
+                    "typeID": "TextArea",
+                    "zOrder": "8",
+                    "w": "1417",
+                    "h": "116",
+                    "measuredW": "200",
+                    "measuredH": "140",
+                    "x": "9",
+                    "y": "927",
+                    "properties": {
+                        "color": "14540253"
+                    }
+                },
+                {
+                    "ID": "15",
+                    "typeID": "BlockOfText",
+                    "zOrder": "9",
+                    "w": "1172",
+                    "measuredW": "275",
+                    "measuredH": "80",
+                    "x": "163",
+                    "y": "945"
+                },
+                {
+                    "ID": "16",
+                    "typeID": "Icon",
+                    "zOrder": "10",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "1228",
+                    "y": "105",
+                    "properties": {
+                        "icon": {
+                            "ID": "search",
+                            "size": "medium"
+                        }
+                    }
+                },
+                {
+                    "ID": "17",
+                    "typeID": "BlockOfText",
+                    "zOrder": "11",
+                    "w": "683",
+                    "h": "135",
+                    "measuredW": "275",
+                    "measuredH": "80",
+                    "x": "564",
+                    "y": "378"
+                },
+                {
+                    "ID": "18",
+                    "typeID": "BlockOfText",
+                    "zOrder": "12",
+                    "w": "683",
+                    "h": "135",
+                    "measuredW": "275",
+                    "measuredH": "80",
+                    "x": "564",
+                    "y": "558"
+                },
+                {
+                    "ID": "19",
+                    "typeID": "BlockOfText",
+                    "zOrder": "13",
+                    "w": "683",
+                    "h": "135",
+                    "measuredW": "275",
+                    "measuredH": "80",
+                    "x": "564",
+                    "y": "728"
+                }
+            ]
+        },
+        "attributes": {
+            "name": "Acceuil_PC_event",
+            "order": 672404.3748242048,
+            "parentID": null
+        },
+        "resourceID": "34BCF866-7E8F-4193-8084-74DB6FDF9FE8",
+        "mockupH": "1061",
+        "mockupW": "1417",
+        "measuredW": "1426",
+        "measuredH": "1070",
+        "version": "1.0"
+    }
+}

@@ -1,0 +1,132 @@
+/* D'ici à la ligne 56, le CSS concerne la barre de switch */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: lightgrey;
+  -webkit-transition: .4s;
+  transition: .1s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  overflow: hidden;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(99%);
+}
+
+body {
+  width: 100%;
+  font-family: Arial;
+  margin: 0;
+}
+
+/* CSS concernant la partie haute de la page */
+.header{
+  position: relative;
+}
+
+/* Applique les même caractéristiques au bouton "se connecter" et "s'inscrire" */
+.inscri_connec {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 20px;
+  font-family: Comic;
+}
+
+.inscri_connec a{
+  padding-right: 20px;
+  color: white;
+  font-size: 22px;
+}
+
+.inscri_connec a:visited{
+  color: black;
+}
+
+/* Modifie la barre de recherche */
+#recherche {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+}
+
+/* CSS concernant la partie commerce du milieu de page */
+.corps{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.icone img{
+  width: 225px;
+  height: 225px;
+}
+
+ .icone {
+   padding: 5% 7%;
+   justify-content: space-around;
+ }
+
+.corps p{
+  text-align: center;
+}
+
+/* CSS concernant le footer */
+.footer {
+  background-color: lightblue;
+  height: 100px;
+  border-top: solid black 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ .footer a{
+   padding: 10px;
+   border: dotted 30px green;
+   border-radius: 50px;
+ }
