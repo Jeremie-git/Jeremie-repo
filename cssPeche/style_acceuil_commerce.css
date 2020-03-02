@@ -81,8 +81,12 @@ body {
   font-size: 22px;
 }
 
+.inscri_connec img {
+  width: 30px;
+}
+
 .inscri_connec a:visited{
-  color: black;
+  color: white;
 }
 
 /* Modifie la barre de recherche */
@@ -112,8 +116,10 @@ body {
    justify-content: space-around;
  }
 
-.corps p{
+.corps h2{
   text-align: center;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* CSS concernant le footer */
@@ -122,11 +128,26 @@ body {
   height: 100px;
   border-top: solid black 2px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
  .footer a{
    padding: 10px;
-   border: dotted 30px green;
-   border-radius: 50px;
  }
+
+@media screen and (max-width:370px) {
+  #recherche {
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+  }
+
+  .inscri_connec {
+    width: 100%;
+  }
+
+}
