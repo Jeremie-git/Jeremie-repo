@@ -29,7 +29,7 @@ session_start();//session_start() combiné à $_SESSION (voir en fin de traiteme
 				} else {
 					//tous les champs sont précisés, on regarde si le membre est inscrit dans la bdd:
 					//d'abord il faut créer une connexion à la base de données dans laquelle on souhaite regarder:
-					$mysqli=mysqli_connect('localhost','admin','m8hcus3G_','assopeche');//'serveur','nom d'utilisateur','pass','nom de la table'
+					$mysqli=mysqli_connect('localhost','root','','assopeche');//'serveur','nom d'utilisateur','pass','nom de la table'
 					if(!$mysqli) {
 						echo "Erreur connexion BDD";
 						//Dans ce script, je pars du principe que les erreurs ne sont pas affichées sur le site, vous pouvez donc voir qu'elle erreur est survenue avec mysqli_error(), pour cela décommentez la ligne suivante:

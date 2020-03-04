@@ -14,7 +14,7 @@ if(!isset($_SESSION['pseudo'])){
 $Pseudo=$_SESSION['pseudo'];//on défini la variable $Pseudo (Plus simple à écrire que $_SESSION['pseudo']) pour pouvoir l'utiliser plus bas dans la page
 
 //on se connecte une fois pour toutes les actions possible de cette page:
-$mysqli=mysqli_connect('localhost','admin','m8hcus3G_','assopeche');//'serveur','nom d'utilisateur','pass','nom de la table'
+$mysqli=mysqli_connect('localhost','root','','assopeche');//'serveur','nom d'utilisateur','pass','nom de la table'
 if(!$mysqli) {
 	echo "Erreur connexion BDD";
 	//Dans ce script, je pars du principe que les erreurs ne sont pas affichées sur le site, vous pouvez donc voir qu'elle erreur est survenue avec mysqli_error(), pour cela décommentez la ligne suivante:
