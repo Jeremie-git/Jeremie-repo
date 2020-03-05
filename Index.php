@@ -1,3 +1,38 @@
+<?php
+  $valeurs=[];
+  /*************************
+	*  Page: connexion.php
+	*  Page encodée en UTF-8
+	**************************/
+
+  session_start();//session_start() combiné à $_SESSION (voir en fin de traitement du formulaire) nous permettra de garder le pseudo en sauvegarde pendant qu'il est connecté, si vous voulez que sur une page, le pseudo soit (ou tout autre variable sauvegardée avec $_SESSION) soit retransmis, mettez session_start() au début de votre fichier PHP, comme ici
+
+    //on se connecte une fois pour toutes les actions possible de cette page:
+    $mysqli=mysqli_connect('localhost','root','','assopeche');//'serveur','nom d'utilisateur','pass','nom de la table'
+    if(!$mysqli) {
+    	echo "Erreur connexion BDD";
+    	//Dans ce script, je pars du principe que les erreurs ne sont pas affichées sur le site, vous pouvez donc voir qu'elle erreur est survenue avec mysqli_error(), pour cela décommentez la ligne suivante:
+    	//echo "<br>Erreur retournée: ".mysqli_error($mysqli);
+    	exit(0);
+    } else {
+        //on récupère les infos du membre si on souhaite les afficher dans la page:
+        $req=mysqli_query($mysqli,"SELECT id, author, content, created_at FROM messages");
+        while ($row = mysqli_fetch_assoc($req)) {
+          //printf ("id : %s  Author : %s Content : %s Created_at : %s", $row[id], $row["author"], $row["content"], $row["created_at"]);
+          array_push($valeurs,$row); 
+       }
+       
+        
+       
+
+    }
+    //var_dump($valeurs);
+    //var_dump($author); //author;//," content: ",$content," date: ",$date;
+
+    mysqli_free_result($req);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -9,9 +44,10 @@
     
     <link rel="stylesheet" href="test.css">
 
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
     <script src="./test.js"></script>
 
 
@@ -45,7 +81,7 @@
               <div class="panel panel-default">
                     <div class="panel-heading top-bar">
                         <div class="col-md-8 col-xs-8">
-                            <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - Miguel</h3>
+                            <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> TChat Pêche</h3>
                         </div>
                         <div class="col-md-4 col-xs-4" style="text-align: right;">
                             <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
@@ -53,85 +89,36 @@
                         </div>
                     </div>
                     <div class="panel-body msg_container_base">
-                        <div class="row msg_container base_sent">
-                            <div class="col-md-10 col-xs-10">
-                                <div class="messages msg_sent">
-                                    <p>that mongodb thing looks good, huh?
-                                    tiny master db, and huge document store</p>
-                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+
+                        <?php
+                          for ($i=0; $i < sizeof($valeurs); $i++){
+                            echo "
+                              <div class=\"row msg_container base_receive\">
+                                <div class=\"col-md-2 col-xs-2 avatar\">
+                                  <img src=\"http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg\" class=\" img-responsive \">
                                 </div>
-                            </div>
-                            <div class="col-md-2 col-xs-2 avatar">
-                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                            </div>
-                        </div>
-                        <div class="row msg_container base_receive">
-                            <div class="col-md-2 col-xs-2 avatar">
-                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                            </div>
-                            <div class="col-md-10 col-xs-10">
-                                <div class="messages msg_receive">
-                                    <p>that mongodb thing looks good, huh?
-                                    tiny master db, and huge document store</p>
-                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                <div class=\"col-md-10 col-xs-10\">
+                                  <div class=\"messages msg_receive\">
+                                    <p>";
+                                    echo $valeurs[$i]['content']."</p>
+                                    <time>";
+                                    echo $valeurs[$i]['author']." • ".$valeurs[$i]['created_at']."</time>
+                                  </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row msg_container base_receive">
-                            <div class="col-md-2 col-xs-2 avatar">
-                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                            </div>
-                            <div class="col-xs-10 col-md-10">
-                                <div class="messages msg_receive">
-                                    <p>that mongodb thing looks good, huh?
-                                    tiny master db, and huge document store</p>
-                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row msg_container base_sent">
-                            <div class="col-xs-10 col-md-10">
-                                <div class="messages msg_sent">
-                                    <p>that mongodb thing looks good, huh?
-                                    tiny master db, and huge document store</p>
-                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-xs-2 avatar">
-                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                            </div>
-                        </div>
-                        <div class="row msg_container base_receive">
-                            <div class="col-md-2 col-xs-2 avatar">
-                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                            </div>
-                            <div class="col-xs-10 col-md-10">
-                                <div class="messages msg_receive">
-                                    <p>that mongodb thing looks good, huh?
-                                    tiny master db, and huge document store</p>
-                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row msg_container base_sent">
-                            <div class="col-md-10 col-xs-10 ">
-                                <div class="messages msg_sent">
-                                    <p>that mongodb thing looks good, huh?
-                                    tiny master db, and huge document store</p>
-                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-xs-2 avatar">
-                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                            </div>
-                        </div>
+                              </div>";
+                          }
+                        ?>
+
                     </div>
                     <div class="panel-footer">
                         <div class="input-group">
-                            <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+                          <form action="minichat_post.php" method="post">
+                            <input name="pseudo" id="btn-input" type="text" class="form-control input-sm chat_nom" placeholder="votre pseudo ici..." />
+                            <input name="message" id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Ecrivez votre message ici..." />
                             <span class="input-group-btn">
-                            <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                            <button type="submit" class="btn btn-primary btn-sm" id="btn-chat">Envoyer</button>
                             </span>
+                          </form>
                         </div>
                     </div>
             </div>
@@ -232,7 +219,6 @@
     
 
   </body>
-  <script type="text/javascript" src="index.js">
-
-  </script>
+  <script type="text/javascript" src="index.js"></script>
+  <script src="app.js"></script>
 </html>
